@@ -1,2 +1,4 @@
 # weak-SINDy-diffusion-estimator
-TBD
+This project uses Weak SINDy to extract a governing partial differential equation (PDE) directly from a sequence of experimental images showing red dye diffusing in water. By preprocessing the images into grayscale matrices and estimating spatial and temporal derivatives, we were able to recover a PDE that closely resembles the classical diffusion equation. This demonstrates the potential of data-driven methods to reveal underlying physical laws from visual data.
+
+Sparse Identification of Nonlinear Dynamics (SINDy) is a method for discovering governing equations by applying sparse regression to time-series data. It assumes that only a few terms from a library of candidate functions are needed to describe the dynamics, enabling interpretable models. Weak SINDy extends this framework by using a weak formulation, which improves robustness to noise and makes it well-suited for recovering dynamics from sparse or noisy data, like experimental images.
